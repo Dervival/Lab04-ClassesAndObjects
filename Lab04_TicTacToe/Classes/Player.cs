@@ -10,8 +10,9 @@ namespace Lab04_TicTacToe.Classes
         /// Name of the player. For this game, will use user input in main() to determine this.
         /// </summary>
 		public string Name { get; set; }
+
 		/// <summary>
-		/// P1 is X and P2 will be O; determined in main()
+		/// String representing the moves of the player. P1 is X and P2 will be O; assigned in main().
 		/// </summary>
 		public string Marker { get; set; }
 

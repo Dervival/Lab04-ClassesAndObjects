@@ -9,14 +9,18 @@ namespace Lab04_TicTacToe
         {
             Console.WriteLine("Welcome to Tic-Tac-Toe.");
             Console.WriteLine("Player 1, please enter your name.");
-            Player playerOne = new Player();
-            playerOne.Name = Console.ReadLine();
-            playerOne.Marker = "X";
+            Player playerOne = new Player
+            {
+                Name = Console.ReadLine(),
+                Marker = "X"
+            };
             Console.WriteLine("Hello there, " + playerOne.Name + ".");
             Console.WriteLine("Player 2, please enter your name.");
-            Player playerTwo = new Player();
-            playerTwo.Name = Console.ReadLine();
-            playerTwo.Marker = "O";
+            Player playerTwo = new Player
+            {
+                Name = Console.ReadLine(),
+                Marker = "O"
+            };
             Game testGame = new Game(playerOne, playerTwo);
             Player winner = testGame.Play();
             if(winner.Name == "Nobody won")
