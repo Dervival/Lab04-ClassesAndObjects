@@ -1,5 +1,5 @@
-﻿using System;
-using Lab04_TicTacToe.Classes;
+﻿using Lab04_TicTacToe.Classes;
+using System;
 
 namespace Lab04_TicTacToe
 {
@@ -7,16 +7,24 @@ namespace Lab04_TicTacToe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Player a = new Player();
-            a.Name = "a";
-            a.Marker = "X";
-            Player b = new Player();
-            b.Name = "b";
-            b.Marker = "O";
-            Game testGame = new Game(a,b);
+            Console.WriteLine("Welcome to Tic-Tac-Toe.");
+            Console.WriteLine("Player 1, please enter your name.");
+            Player playerOne = new Player();
+            playerOne.Name = Console.ReadLine();
+            playerOne.Marker = "X";
+            Console.WriteLine("Hello there, " + playerOne.Name + ".");
+            Console.WriteLine("Player 2, please enter your name.");
+            Player playerTwo = new Player();
+            playerTwo.Name = Console.ReadLine();
+            playerTwo.Marker = "O";
+            Game testGame = new Game(playerOne, playerTwo);
             Player winner = testGame.Play();
-            Console.WriteLine("Player 1, " + winner.Name + " was the winner");
+            if(winner.Name == "Nobody won")
+            {
+                Console.WriteLine("It looks like it's a tie game! Better luck next time.");
+                return;
+            }
+            Console.WriteLine("Congratulations, " + winner.Name + ", you won!\n");
         }
     }
 }

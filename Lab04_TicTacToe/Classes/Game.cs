@@ -30,6 +30,7 @@ namespace Lab04_TicTacToe.Classes
 		/// <returns>Winner</returns>
 		public Player Play()
 		{
+            Console.WriteLine("\nWelcome to Tic-Tac-Toe, " + PlayerOne.Name + " and " + PlayerTwo.Name+ ". Now, let's play!");
             Player tie = new Player();
             tie.Name = "Nobody won";
             Player activePlayer = PlayerOne;
@@ -37,7 +38,7 @@ namespace Lab04_TicTacToe.Classes
             //PlayerOne gets the first move
             //Only 9 locations - end in a tie if neither win after 9 moves
             int positionsLeft = 9;
-            Console.WriteLine("In Play() - PlayerOne is " + PlayerOne.Name + " and PlayerTwo is " + PlayerTwo.Name);
+            //Console.WriteLine("In Play() - PlayerOne is " + PlayerOne.Name + " and PlayerTwo is " + PlayerTwo.Name);
             bool gameRunning = true;
             while (gameRunning)
             {
@@ -47,10 +48,9 @@ namespace Lab04_TicTacToe.Classes
                 }
                 TestGame.Board.DisplayBoard();
                 activePlayer.TakeTurn(TestGame.Board);
-                Console.WriteLine("Gameboard is now:");
-                TestGame.Board.DisplayBoard();
                 if (CheckForWinner(TestGame.Board))
                 {
+                    TestGame.Board.DisplayBoard();
                     return activePlayer;
                 }
                 positionsLeft--;
@@ -87,7 +87,7 @@ namespace Lab04_TicTacToe.Classes
 		/// <returns>if winner exists</returns>
 		public bool CheckForWinner(Board board)
 		{
-            Console.WriteLine("In CheckForWinner");
+            //Console.WriteLine("In CheckForWinner");
 			int[][] winners = new int[][]
 			{
                 //Win by filling a row
@@ -145,7 +145,7 @@ namespace Lab04_TicTacToe.Classes
 		/// <returns>next player</returns>
 		public Player NextPlayer()
 		{
-            Console.WriteLine("Currently player one's turn? " + PlayerOne.IsTurn);
+            //Console.WriteLine("Currently player one's turn? " + PlayerOne.IsTurn);
 			return (PlayerOne.IsTurn) ? PlayerOne : PlayerTwo;
 		}
 
