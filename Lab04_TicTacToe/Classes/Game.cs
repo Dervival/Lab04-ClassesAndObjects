@@ -31,8 +31,10 @@ namespace Lab04_TicTacToe.Classes
 		public Player Play()
 		{
             Console.WriteLine("\nWelcome to Tic-Tac-Toe, " + PlayerOne.Name + " and " + PlayerTwo.Name+ ". Now, let's play!");
-            Player tie = new Player();
-            tie.Name = "Nobody won";
+            Player tie = new Player
+            {
+                Name = "Nobody won"
+            };
             Player activePlayer = PlayerOne;
             Game TestGame = new Game(PlayerOne, PlayerTwo);
             //PlayerOne gets the first move
