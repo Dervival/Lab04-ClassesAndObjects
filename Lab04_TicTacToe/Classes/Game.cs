@@ -54,7 +54,9 @@ namespace Lab04_TicTacToe.Classes
                     return activePlayer;
                 }
                 positionsLeft--;
-
+                SwitchPlayer();
+                activePlayer = NextPlayer();
+                
                 //TODO: Complete this method and utilize the rest of the class structure to play the game.
 
                 /*
@@ -114,15 +116,15 @@ namespace Lab04_TicTacToe.Classes
 				string b = Board.GameBoard[p2.Row, p2.Column];
 				string c = Board.GameBoard[p3.Row, p3.Column];
 
-                // TODO:  Determine a winner has been reached. 
+                // TODO:  Determine a winner has been reached. Done
                 // return true if a winner has been reached. 
 
-                // TODO: Convert a, b, and c into what's currently at that position rather than just the number?
-                Console.WriteLine("Do " + a + ", " + b + ", and " + c + " match?");
+                // TODO: Convert a, b, and c into what's currently at that position rather than just the number? Done
+                //Console.WriteLine("Do " + a + ", " + b + ", and " + c + " match?");
                 string aMark = board.GameBoard[(Convert.ToInt32(a) - 1) / 3, (Convert.ToInt32(a) - 1) % 3];
                 string bMark = board.GameBoard[(Convert.ToInt32(b) - 1) / 3, (Convert.ToInt32(b) - 1) % 3];
                 string cMark = board.GameBoard[(Convert.ToInt32(c) - 1) / 3, (Convert.ToInt32(c) - 1) % 3];
-                Console.WriteLine("Do " + aMark + ", " + bMark + ", and " + cMark + " match?");
+                //Console.WriteLine("Do " + aMark + ", " + bMark + ", and " + cMark + " match?");
                 if (aMark == bMark && bMark == cMark)
                 {
                     return true;
@@ -143,6 +145,7 @@ namespace Lab04_TicTacToe.Classes
 		/// <returns>next player</returns>
 		public Player NextPlayer()
 		{
+            Console.WriteLine("Currently player one's turn? " + PlayerOne.IsTurn);
 			return (PlayerOne.IsTurn) ? PlayerOne : PlayerTwo;
 		}
 
