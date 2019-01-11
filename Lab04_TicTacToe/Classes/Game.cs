@@ -45,6 +45,7 @@ namespace Lab04_TicTacToe.Classes
             {
                 if(positionsLeft == 0)
                 {
+                    TestGame.Board.DisplayBoard();
                     return tie;
                 }
                 TestGame.Board.DisplayBoard();
