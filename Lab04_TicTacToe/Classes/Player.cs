@@ -20,7 +20,11 @@ namespace Lab04_TicTacToe.Classes
 		/// </summary>
 		public bool IsTurn { get; set; }
 
-
+        /// <summary>
+        /// Polls the user for input for a board location, and returns it as a Position object.
+        /// </summary>
+        /// <param name="board">The game board being interacted with, in its current (not default) state.</param>
+        /// <returns>Returns the position of the location selected by the player.</returns>
 		public Position GetPosition(Board board)
 		{
 			Position desiredCoordinate = null;
@@ -34,7 +38,11 @@ namespace Lab04_TicTacToe.Classes
 
 		}
 
-
+        /// <summary>
+        /// Converts an int representing the position on the gameboard into a Position object to be manipulated later.
+        /// </summary>
+        /// <param name="position">An int representing the position on the board that was selected.</param>
+        /// <returns>Returns the position of the location selected by the player.</returns>
 		public static Position PositionForNumber(int position)
 		{
 			switch (position)
@@ -53,8 +61,11 @@ namespace Lab04_TicTacToe.Classes
 			}
 		}
 
-	
-		public void TakeTurn(Board board)
+        /// <summary>
+        /// Main method for having a user take their turn for tic-tac-toe. Polls the user for a position input, rejecting previously selected positions.
+        /// </summary>
+        /// <param name="board">The game board being interacted with. The values on the gameboard dictate if a selected position is valid to be selected or not.</param>
+        public void TakeTurn(Board board)
 		{
 			IsTurn = true;
 

@@ -32,24 +32,15 @@ namespace Lab04_TicTacToe.Classes
 		{
             Player tie = new Player();
             tie.Name = "Nobody won";
+            Player activePlayer = PlayerOne;
             Game TestGame = new Game(PlayerOne, PlayerTwo);
             //PlayerOne gets the first move
-            PlayerOne.IsTurn = true;
             //Only 9 locations - end in a tie if neither win after 9 moves
             int positionsLeft = 9;
             Console.WriteLine("In Play() - PlayerOne is " + PlayerOne.Name + " and PlayerTwo is " + PlayerTwo.Name);
             bool gameRunning = true;
             while (gameRunning)
             {
-                Player activePlayer;
-                if (PlayerOne.IsTurn)
-                {
-                    activePlayer = PlayerOne;
-                }
-                else
-                {
-                    activePlayer = PlayerTwo;
-                }
                 if(positionsLeft == 0)
                 {
                     return tie;
@@ -62,8 +53,8 @@ namespace Lab04_TicTacToe.Classes
                 {
                     return activePlayer;
                 }
-
                 positionsLeft--;
+
                 //TODO: Complete this method and utilize the rest of the class structure to play the game.
 
                 /*
