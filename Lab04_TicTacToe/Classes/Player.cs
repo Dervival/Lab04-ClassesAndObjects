@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab04_TicTacToe.Classes
 {
-    class Player
+    public class Player
     {
         /// <summary>
         /// Name of the player. For this game, will use user input in main() to determine this.

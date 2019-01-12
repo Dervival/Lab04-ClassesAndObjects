@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab04_TicTacToe.Classes
 {
-	class Game
+	public class Game
 	{
 		public Player PlayerOne { get; set; }
 		public Player PlayerTwo { get; set; }
@@ -94,21 +94,17 @@ namespace Lab04_TicTacToe.Classes
 				Position p2 = Player.PositionForNumber(winners[i][1]);
 				Position p3 = Player.PositionForNumber(winners[i][2]);
 
-				string a = Board.GameBoard[p1.Row, p1.Column];
-				string b = Board.GameBoard[p2.Row, p2.Column];
-				string c = Board.GameBoard[p3.Row, p3.Column];
+                //needs to be board.GameBoard not Board.GameBoard
+                string a = board.GameBoard[p1.Row, p1.Column];
+				string b = board.GameBoard[p2.Row, p2.Column];
+				string c = board.GameBoard[p3.Row, p3.Column];
 
-                //This is really hardcoded - since we know that the board is a [3,3] array and values can only be between 1-9, we can use division to determine the row and modulo to determine the column of the position
-                string aMark = board.GameBoard[(Convert.ToInt32(a) - 1) / 3, (Convert.ToInt32(a) - 1) % 3];
-                string bMark = board.GameBoard[(Convert.ToInt32(b) - 1) / 3, (Convert.ToInt32(b) - 1) % 3];
-                string cMark = board.GameBoard[(Convert.ToInt32(c) - 1) / 3, (Convert.ToInt32(c) - 1) % 3];
-                if (aMark == bMark && bMark == cMark)
+                if (a == b && b == c)
                 {
                     return true;
                 }
             }
-
-			return false;
+            return false;
 		}
 
 

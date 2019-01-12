@@ -1,0 +1,17 @@
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\bin\Debug\netcoreapp2.2\TicTacToeUnitTests.deps.json
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\bin\Debug\netcoreapp2.2\TicTacToeUnitTests.runtimeconfig.json
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\bin\Debug\netcoreapp2.2\TicTacToeUnitTests.runtimeconfig.dev.json
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\bin\Debug\netcoreapp2.2\TicTacToeUnitTests.dll
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\bin\Debug\netcoreapp2.2\TicTacToeUnitTests.pdb
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\bin\Debug\netcoreapp2.2\Lab04_TicTacToe.dll
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\bin\Debug\netcoreapp2.2\Lab04_TicTacToe.pdb
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\obj\Debug\netcoreapp2.2\TicTacToeUnitTests.csprojAssemblyReference.cache
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\obj\Debug\netcoreapp2.2\TicTacToeUnitTests.csproj.CoreCompileInputs.cache
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\obj\Debug\netcoreapp2.2\TicTacToeUnitTests.AssemblyInfoInputs.cache
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\obj\Debug\netcoreapp2.2\TicTacToeUnitTests.AssemblyInfo.cs
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\obj\Debug\netcoreapp2.2\TicTacToeUnitTests.csproj.CopyComplete
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\obj\Debug\netcoreapp2.2\TicTacToeUnitTests.dll
+C:\Users\oobitydoo\Codefellows\week1\labs\ticTacToe\Lab04-ClassesAndObjects\TicTacToeUnitTests\obj\Debug\netcoreapp2.2\TicTacToeUnitTests.pdb
