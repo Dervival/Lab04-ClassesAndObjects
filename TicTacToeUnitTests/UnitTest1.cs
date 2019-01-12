@@ -75,6 +75,7 @@ namespace TicTacToeUnitTests
             //assert
             Assert.False(gameStub.CheckForWinner(gameStub.Board));
         }
+
         [Fact]
         public void EnsureSwitchPlayerSwitchesPlayers()
         {
@@ -85,6 +86,7 @@ namespace TicTacToeUnitTests
             gameStub.SwitchPlayer();
             Assert.True(playerTwoStub.IsTurn);
         }
+
         [Fact]
         public void EnsureNextPlayerReturnsNextPlayer()
         {
@@ -116,10 +118,5 @@ namespace TicTacToeUnitTests
             Assert.Equal(zeroIndex%3, selectedPosition.Column);
             Assert.Equal(zeroIndex/3, selectedPosition.Row);
         }
-        //    [Fact]
-        //    public void EnsurePositionForNumberProceedsProperly()
-        //    {
-
-        //    }
     }
-    }
+}
